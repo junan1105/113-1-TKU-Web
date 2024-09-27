@@ -1,7 +1,7 @@
 /* 全選選擇器 */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 5px;
     /* 很重要自己查 */
     box-sizing: border-box;
     font-size: 16px;
@@ -50,9 +50,9 @@ body {
     /* 撐開內邊距 */
     padding: 3%;
     /* 陰影 */
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px 1px rgb(30, 253, 0);
     /* 外框 */
-    border: 1px solid #51515130;
+    border: 1px solid #f70707;
     /* 變形, 幅度為 .3rem (圓角矩形) */
     border-radius: .3rem;
     /* 過度動畫長度指定半秒鐘 */
@@ -64,7 +64,7 @@ body {
 /* 虛擬類別選擇器, 這裡選擇這東西被滑鼠懸停時的狀態 */
 .wrapper .btn:hover {
     /* 外框 */
-    border: 1px solid #51515150;
+    border: 1px solid #f2ff00;
     /* 陰影 */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgb(7, 19, 238);
 }
