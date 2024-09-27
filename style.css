@@ -1,0 +1,70 @@
+/* 全選選擇器 */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 很重要自己查 */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* 逗點的意思是兩個都選 */
+html,
+body {
+    /* 把html跟body的大小撐開 */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* id選擇器, 選擇所有 id="container" 的東西 */
+#container {
+    /* 把container的大小撐開 */
+    width: 100%;
+    height: 100%;
+    /* 撐開內邊距 */
+    padding: 1%;
+    /* flex布局 */
+    display: flex;
+    /* 垂直排列 */
+    flex-direction: column;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+    justify-content: center;
+}
+
+/* class選擇器, 選擇所有 class="wrapper" 的東西 */
+.wrapper {
+    /* flex布局 */
+    display: flex;
+    /* 垂直排列 */
+    flex-direction: column;
+    /* 子元素間距2.5rem */
+    gap: 2.5rem;
+}
+
+/* 空白的意思是選擇子內容 */
+/* id選擇器, 選擇所有 id="wrapper"的東西裡面 class="btn" 的東西*/
+.wrapper .btn {
+    /* 指定寬度 */
+    width: 50rem;
+    /* 撐開內邊距 */
+    padding: 3%;
+    /* 陰影 */
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    /* 外框 */
+    border: 1px solid #51515130;
+    /* 變形, 幅度為 .3rem (圓角矩形) */
+    border-radius: .3rem;
+    /* 過度動畫長度指定半秒鐘 */
+    transition: all .5s;
+}
+
+/* 冒號的意思是選擇虛擬類別 */
+/* id選擇器, 選擇所有 id="wrapper"的東西裡面 class="btn" 的東西*/
+/* 虛擬類別選擇器, 這裡選擇這東西被滑鼠懸停時的狀態 */
+.wrapper .btn:hover {
+    /* 外框 */
+    border: 1px solid #51515150;
+    /* 陰影 */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
